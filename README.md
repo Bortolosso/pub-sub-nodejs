@@ -1,36 +1,24 @@
-# api-python-mongo
+# Reference to Pub/sub with Nodejs
 
-___________________________________________________________________________________
-
-### (Backend)Api run:
+### run:
 ##### Pre-requisitos:
-- Python **3.8.5**
-- pip **20.1.1**
+- Nodejs **v12.22.11**
+- NPM **6.14.16**
+
+Rode o seguinte comando para a instalação das bios:
+**npm install**
 
 1. Esteja no diretorio **raiz** do projeto.
 
-2. Inicialize e ative sua maquína virtual:
+2. Para rodar as funções responsáveis por executar ações com os topicos basta executar da seguinte forma:
 
-**Windows:**
-- (Cria maquina virtual) Rode o comando -> $ **_python -m venv env_**
-- (Inicia maquina virtual) Rode o comando -> $ **_.\env\Scripts\activate_**
+**Criar:**
+- node createNewTopic.js
 
-**Macos:** 
-- (Cria maquina virtual) Rode o comando -> $ **_python -m venv env_**
-- (Inicia maquina virtual) Rode o comando -> $ **_source env/bin/activate_**
+**Listar:** 
+- node listTopics.js
 
-**Linux:**
-- (Cria maquina virtual) Rode o comando -> $ **_python3 -m venv env_**
-- (Inicia maquina virtual) Rode o comando -> $ **_source env/bin/activate_**
-
-3. Instale todas as depedencias e bibliotecas do projeto com o comando:
-
-- **Windowns, MacOs, Linux** -> $ **_pip install -r requirements.txt_**
-
-4. Rode a API com o comando -> $ **_python app/main.py_**
-
-Api Restfull -> [http://127.0.0.1:8000](http://127.0.0.1:8000)
-
-Documentação da API(SWAGGER) -> [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
+**Deletar:**
+- node deleteTopic.js
 
 ___________________________________________________________________________________
